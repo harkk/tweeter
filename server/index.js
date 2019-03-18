@@ -8,6 +8,7 @@ const bodyParser    = require("body-parser");
 const app           = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
+// This serves files from the public directory
 app.use(express.static("public"));
 
 // The in-memory database of tweets. It's a basic object with an array in it.
