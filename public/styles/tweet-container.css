@@ -24,25 +24,31 @@ article.tweet img {
 article.tweet h2 {
   order: 1;
   height: 3rem;
+  flex-grow: 8;
 }
 
 article.tweet h5 {
   order: 2;
-  margin-left: 8rem;
   height: 3rem;
+  color: #478b9e;
+  flex-grow: 2;
+  text-align: right;
+  margin-right: 5px;
 }
 
-article.tweet #tweet-content {
-  height: 4rem;
+article.tweet p {
+  height: auto;
   margin-left: 1rem;
   margin-right: 1rem;
+  vertical-align: middle;
 }
 
 article.tweet footer {
   border-top: 1px solid #cccccc;
 }
 
-article.tweet footer #age {
+article.tweet footer p {
   height: auto;
   margin-left: 0.5rem;
+  font-size: 80%;
 }
