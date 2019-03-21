@@ -8,6 +8,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  overflow: scroll;
 }
 
 /*
@@ -27,7 +28,6 @@ body {
   margin: auto;
   padding-top: 140px;
   height: 100vh;
-  overflow: scroll;
 }
 
 /*
