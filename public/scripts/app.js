@@ -23,6 +23,7 @@ $(document).ready(function () {
     "created_at": 1461116232227
   }
 
+
   function createTweetElement(tweet) {
     return `<section class ="tweet-container">
       <article class="tweet">
@@ -39,12 +40,10 @@ $(document).ready(function () {
     </section>`
   }
 
+
   var $tweet = createTweetElement(tweetData);
 
-  console.log($tweet);
-  $('.container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+  $('.container').append($tweet);
 })
 
-
-// Test / driver code (temporary)
-//console.log($tweet); // to see what it looks like
