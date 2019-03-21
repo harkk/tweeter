@@ -1,3 +1,14 @@
+article.tweet:hover {
+  border: 1px solid black;
+}
+
+article.tweet header:hover {
+  background-color: #e6e6e6;
+  opacity: 1;
+}
+
+
+
 article.tweet {
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -7,9 +18,10 @@ article.tweet {
 article.tweet header {
   display: flex;
   flex-direction: row;
-  background-color: #EDEDED;
+  background-color: #f2f2f2;
   height: 4rem;
   align-items: center;
+  opacity: 0.5;
 }
 
 article.tweet img {
@@ -25,12 +37,13 @@ article.tweet h2 {
   order: 1;
   height: 3rem;
   flex-grow: 8;
+  color: #61a5b8;
 }
 
 article.tweet h5 {
   order: 2;
   height: 3rem;
-  color: #478b9e;
+  color: #a7cdd7;
   flex-grow: 2;
   text-align: right;
   margin-right: 5px;
