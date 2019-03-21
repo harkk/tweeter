@@ -79,5 +79,20 @@ function createTweetElement(tweet) {
     </section>`
   }
 
-renderTweets(data);
+$(document).ready(function() {
+  $.ajax( {
+   type: "GET",
+    url: "/tweets"
+  }).done(function(res) {
+    renderTweets(res);
+  })
+  $(".new-tweet form").on("submit", function(event) {
+    event.preventDefault();
+    $.ajax( {
+      type: "POST",
+      url: "/tweets",
+      data: $(this).serialize()
+    });
+  });
+});
 })
