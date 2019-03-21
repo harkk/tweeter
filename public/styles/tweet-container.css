@@ -2,34 +2,47 @@ article.tweet {
   border: 1px solid #cccccc;
   border-radius: 5px;
   margin: 1rem 2rem 0 2rem;
-  height: ;
 }
 
 article.tweet header {
+  display: flex;
+  flex-direction: row;
   background-color: #EDEDED;
-  height: 8rem;
+  height: 4rem;
+  align-items: center;
 }
 
 article.tweet img {
-
+  order: 0;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 5px;
+  height: 48px;
+  width: 48px;
 }
 
 article.tweet h2 {
-
+  order: 1;
+  height: 3rem;
 }
 
 article.tweet h5 {
-  float:right;
+  order: 2;
+  margin-left: 8rem;
+  height: 3rem;
 }
 
-article.tweet p {
-
+article.tweet #tweet-content {
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 article.tweet footer {
   border-top: 1px solid #cccccc;
 }
 
-article.tweet footer p {
-
+article.tweet footer #age {
+  height: auto;
+  margin-left: 0.5rem;
 }
