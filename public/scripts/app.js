@@ -5,6 +5,7 @@
  */
 
 // Test / driver code (temporary). Eventually will get this from the server.
+$(document).ready(function() {
 const data = [
   {
     "user": {
@@ -79,3 +80,4 @@ function createTweetElement(tweet) {
   }
 
 renderTweets(data);
+})

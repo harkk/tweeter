@@ -1,7 +1,5 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  console.log("Ready");
-
   var charCount;
   $("#textarea").on("input", function() {
     var charCount = 140 - $(this).val().length;
