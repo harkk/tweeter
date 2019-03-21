@@ -1,0 +1,35 @@
+article.tweet {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 1rem 2rem 0 2rem;
+  height: ;
+}
+
+article.tweet header {
+  background-color: #EDEDED;
+  height: 8rem;
+}
+
+article.tweet img {
+
+}
+
+article.tweet h2 {
+
+}
+
+article.tweet h5 {
+  float:right;
+}
+
+article.tweet p {
+
+}
+
+article.tweet footer {
+  border-top: 1px solid #cccccc;
+}
+
+article.tweet footer p {
+
+}
