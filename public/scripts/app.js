@@ -34,22 +34,26 @@ $(document).ready(function() {
   };
 
   function loadTweets() {
-    $.ajax( {
-      type: "GET",
-      url: "/tweets"
-    }).then(function(res) {
-      renderTweets(res);
-    });
+    $.get("http://localhost:8080/tweets", function(allTweets) {
+      renderTweets(allTweets);
+    })
   }
+  loadTweets();
 
   $(".new-tweet form").on("submit", function(event) {
     event.preventDefault();
-    $.ajax( {
-      type: "POST",
-      url: "/tweets",
-      data: $(this).serialize()
-    }).then(function(tweets) {
-      loadTweets();
-    })
+    if ($("#textarea").val().length > 140) {
+      alert("Your tweet is too long!")
+    } else if ($("#textarea").val() === "") {
+      alert("There is nothing to tweet")
+    } else {
+      $.ajax( {
+        type: "POST",
+        url: "/tweets",
+        data: $(this).serialize()
+      }).then(function(tweets) {
+        loadTweets();
+      })
+    }
   });
 });
