@@ -8,14 +8,13 @@
 $(document).ready(function() {
 
   function renderTweets(tweets) {
-    for (tweet of tweets) {
-      let render = createTweetElement(tweet);
-      $('.container').append(render);
-    }
+    tweets.forEach(tweet => {
+      let renderedTweet = createTweetElement(tweet);
+      $(".container").prepend(renderedTweet);
+    })
   }
 
   function createTweetElement(tweet) {
-    let $tweet = $('<article>').addClass('post-tweet');
     let content =
       `<section class = "tweet-container">
         <article class="tweet">
@@ -31,8 +30,7 @@ $(document).ready(function() {
         </article>
       </section>`
 
-    $tweet.append(content);
-    return $tweet;
+    $(".post-tweet").prepend(content);
   };
 
   function loadTweets() {
