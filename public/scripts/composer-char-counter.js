@@ -1,13 +1,15 @@
 $(document).ready(function() {
   // --- our code goes here ---
-  var charCount;
   $("#textarea").on("input", function() {
-    var charCount = 140 - $(this).val().length;
-    $(".counter").text(140 - $(this).val().length);
-    if (charCount < 0) {
-      $(".counter").css("color", "red");
+    let tweetLength = $(this).val().length;
+    let tweetCount = 140 - tweetLength;
+    let count = $(".counter");
+    if (tweetCount > 0) {
+      count.css("color", "black");
+      count.text(tweetCount);
     } else {
-      $(".counter").css("color", "black");
+      count.css("color", "red");
+      count.text(tweetCount);
     }
-})
+  })
 })
