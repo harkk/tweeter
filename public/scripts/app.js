@@ -49,10 +49,13 @@ $(document).ready(function() {
   $(".new-tweet form").on("submit", function(event) {
     event.preventDefault();
     if ($("#textarea").val().length > 140) {
-      alert("Your tweet is too long!")
+      $("#errormsg").text("Your tweet is too long!");
+      $(".error").fadeIn();
     } else if ($("#textarea").val() === "") {
-      alert("There is nothing to tweet")
+      $("#errormsg").text("There is nothing to tweet!");
+      $(".error").FadeIn();
     } else {
+      $(".error").fadeOut();
       $.ajax( {
         type: "POST",
         url: "/tweets",
