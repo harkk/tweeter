@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser
+- chance
+- md5
+- mongodb
+
+## Final Product
+!["Tweeter home page"](https://github.com/harkk/tweeter/blob/master/docs/homepage.png?raw=true)
+
+!["Compose form revealed"](https://github.com/harkk/tweeter/blob/master/docs/compose-revealed.png?raw=true)
