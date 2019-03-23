@@ -21,6 +21,8 @@ This repository is the starter code for the project: Students will fork and clon
 - mongodb
 
 ## Final Product
+Tweeter home page.
 !["Tweeter home page"](https://github.com/harkk/tweeter/blob/master/docs/homepage.png?raw=true)
 
+Compose form revealed after clicking the Compose button in the nav bar.
 !["Compose form revealed"](https://github.com/harkk/tweeter/blob/master/docs/compose-revealed.png?raw=true)
