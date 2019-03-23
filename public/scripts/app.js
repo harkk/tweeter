@@ -25,7 +25,7 @@ $(document).ready(function() {
           </header>
           <p>${escape(tweet.content.text)}</p>
           <footer>
-            <p>${tweet.created_at}</p>
+            <p>${moment(tweet.created_at).fromNow()}</p>
             <div class="social-bar">
               <img src="../images/flag.png" alt="flag">
               <img src="../images/retweet.png" alt="retweet">
