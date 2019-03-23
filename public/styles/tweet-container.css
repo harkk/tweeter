@@ -58,7 +58,6 @@ article.tweet footer {
 }
 
 article.tweet footer p {
-  height: auto;
   margin-left: 0.5rem;
   font-size: 80%;
 }
@@ -73,7 +72,6 @@ article.tweet footer p {
 }
 
 .tweet-container .social-bar img {
-  float: right;
   margin: 0em 0.25em;
   height: 24px;
   width: 24px;

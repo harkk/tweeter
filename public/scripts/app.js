@@ -73,7 +73,8 @@ $(document).ready(function() {
   });
 
   $("#compose").click(function() {
-    $(".new-tweet").toggle();
+    $(".new-tweet").toggle( "fast", function() {
+  });
     $("textarea").focus();
   })
 
