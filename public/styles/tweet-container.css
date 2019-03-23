@@ -32,6 +32,8 @@ article.tweet h2 {
   height: 3rem;
   flex-grow: 8;
   color: #61a5b8;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 article.tweet h5 {
@@ -40,7 +42,7 @@ article.tweet h5 {
   color: #a7cdd7;
   flex-grow: 2;
   text-align: right;
-  margin-right: 5px;
+  margin: 0px 5px 0px 0px;
 }
 
 article.tweet p {
