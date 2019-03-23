@@ -26,6 +26,11 @@ $(document).ready(function() {
           <p>${escape(tweet.content.text)}</p>
           <footer>
             <p>${tweet.created_at}</p>
+            <div class="social-bar">
+              <img src="../images/flag.png" alt="flag">
+              <img src="../images/retweet.png" alt="retweet">
+              <img src="../images/heart.png" alt="heart">
+            </div>
           </footer>
         </article>
       </section>`

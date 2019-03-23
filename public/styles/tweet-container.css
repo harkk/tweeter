@@ -51,10 +51,28 @@ article.tweet p {
 
 article.tweet footer {
   border-top: 1px solid #cccccc;
+  display: flex;
+  justify-content: space-between;
 }
 
 article.tweet footer p {
   height: auto;
   margin-left: 0.5rem;
   font-size: 80%;
+}
+
+.tweet-container .social-bar {
+  margin: 0.5rem;
+  opacity: 0;
+}
+
+.tweet-container:hover .social-bar {
+  opacity: 1;
+}
+
+.tweet-container .social-bar img {
+  float: right;
+  margin: 0em 0.25em;
+  height: 24px;
+  width: 24px;
 }
