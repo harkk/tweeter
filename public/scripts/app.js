@@ -62,6 +62,7 @@ $(document).ready(function() {
         data: $(this).serialize()
       }).then(function(tweets) {
         loadTweets();
+        $("#textarea").val('');
       })
     }
   });
