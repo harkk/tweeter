@@ -6,13 +6,12 @@
 
 // Test / driver code (temporary). Eventually will get this from the server.
 $(document).ready(function() {
-
   function renderTweets(tweets) {
     tweets.forEach(tweet => {
       let renderedTweet = createTweetElement(tweet);
       $(".container").prepend(renderedTweet);
-    })
-  }
+    });
+  };
 
   function createTweetElement(tweet) {
     let content =
@@ -42,13 +41,13 @@ $(document).ready(function() {
     let p = document.createElement('p');
     p.appendChild(document.createTextNode(str));
     return p.innerHTML;
-  }
+  };
 
   function loadTweets() {
     $.get("http://localhost:8080/tweets", function(allTweets) {
       renderTweets(allTweets);
-    })
-  }
+    });
+  };
   loadTweets();
 
   $(".new-tweet form").on("submit", function(event) {
@@ -68,14 +67,13 @@ $(document).ready(function() {
       }).then(function(tweets) {
         loadTweets();
         $("#textarea").val('');
-      })
-    }
+      });
+    };
   });
 
   $("#compose").click(function() {
     $(".new-tweet").toggle( "fast", function() {
   });
     $("textarea").focus();
-  })
-
+  });
 });

@@ -10,6 +10,6 @@ $(document).ready(function() {
     } else {
       count.css("color", "red");
       count.text(tweetCount);
-    }
-  })
-})
+    };
+  });
+});
