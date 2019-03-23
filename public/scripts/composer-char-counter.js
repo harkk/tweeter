@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // --- our code goes here ---
   $("#textarea").on("input", function() {
     let tweetLength = $(this).val().length;
     let tweetCount = 140 - tweetLength;
