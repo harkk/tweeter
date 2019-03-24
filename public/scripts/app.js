@@ -1,3 +1,10 @@
+
+/*
+ * Client-side JS logic goes here
+ * jQuery is already loaded
+ * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+ */
+
 $(document).ready(function() {
   function renderTweets(tweets) {
     tweets.forEach(tweet => {
@@ -6,6 +13,7 @@ $(document).ready(function() {
     });
   };
 
+  // creates tweet HTML element
   function createTweetElement(tweet) {
     let content =
       `<section class = "tweet-container">
@@ -30,6 +38,7 @@ $(document).ready(function() {
     $(".post-tweet").prepend(content);
   };
 
+  // prevents cross site scripting
   function escape(str) {
     let p = document.createElement('p');
     p.appendChild(document.createTextNode(str));
@@ -41,6 +50,8 @@ $(document).ready(function() {
       renderTweets(allTweets);
     });
   };
+
+  //Load tweets contained in Database
   loadTweets();
 
   $(".new-tweet form").on("submit", function(event) {
@@ -65,6 +76,7 @@ $(document).ready(function() {
     };
   });
 
+  // toggle for Compose button in nav-bar
   $("#compose").click(function() {
     $(".new-tweet").toggle( "fast", function() {
   });

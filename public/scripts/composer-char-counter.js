@@ -1,3 +1,6 @@
+// counts characters and changes text colour of counter to red
+// if it exceeds the 140 character limit
+
 $(document).ready(function() {
   $("#textarea").on("input", function() {
     let tweetLength = $(this).val().length;
