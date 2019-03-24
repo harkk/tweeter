@@ -4,4 +4,4 @@ $(document).ready(function() {
       $(".new-tweet").fadeToggle(800);
       $("textarea").focus();
   });
-})
+});
