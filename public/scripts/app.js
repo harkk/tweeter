@@ -58,6 +58,7 @@ $(document).ready(function() {
         url: "/tweets",
         data: $(this).serialize()
       }).then(function(tweets) {
+        $(".tweet-container").children().remove();
         loadTweets();
         $("#textarea").val('');
       });
