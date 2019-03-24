@@ -77,9 +77,8 @@ $(document).ready(function() {
   });
 
   // toggle for Compose button in nav-bar
-  $("#compose").click(function() {
-    $(".new-tweet").toggle( "fast", function() {
-  });
+  $(".compose-toggle").click(function() {
+    $(".new-tweet").fadeToggle(800);
     $("textarea").focus();
   });
 });
