@@ -5,6 +5,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// document ready so entire page is loaded before doing things
 $(document).ready(function() {
   function renderTweets(tweets) {
     tweets.forEach(tweet => {
@@ -56,12 +57,17 @@ $(document).ready(function() {
 
   $(".new-tweet form").on("submit", function(event) {
     event.preventDefault();
+    // if more than 140 characters, error message: too long.
     if ($("#textarea").val().length > 140) {
       $("#errormsg").text("Your tweet is too long!");
       $(".error").fadeIn();
+
+      // if no content entered, error message: nothing here.
     } else if ($("#textarea").val() === "") {
       $("#errormsg").text("There is nothing to tweet!");
       $(".error").FadeIn();
+
+      // else fade out error message, post message, then load tweets.
     } else {
       $(".error").fadeOut();
       $.ajax( {
