@@ -75,10 +75,4 @@ $(document).ready(function() {
       });
     };
   });
-
-  // toggle for Compose button in nav-bar
-  $(".compose-toggle").click(function() {
-    $(".new-tweet").fadeToggle(800);
-    $("textarea").focus();
-  });
 });
